@@ -37,7 +37,7 @@ function backBtn() {
 
 
 let user = {
-  coins: 500,
+  coins: 0,
   badges: 0,
   completed: []
 };
@@ -52,15 +52,28 @@ function loadProgress() {
     document.querySelector('.badge-count').innerHTML = user.badges;
 
     user.completed.forEach(task => {
+      let taskDiv = document.querySelector(`.${task}D`);
 
-      let taskDiv = document.querySelector(`.${task} .buttons`);
-      if (taskDiv) taskDiv.style.display = 'none';
+      // add badge again
+      let badge = document.createElement("img");
+      badge.src = `assets/${task}b.png`; // adjust names if jpeg/png mismatch
+      badge.alt = "badge";
+      document.querySelector(".badgesD").appendChild(badge);
 
-      let img = document.querySelector(`.${task} img`);
-      if (img) img.style.filter = "none";
+      // add congrats message again
+      let congL = document.createElement("p");
+      congL.innerHTML = "Congrats! You completed this task 🎉";
+      taskDiv.appendChild(congL);
+
+      // hide buttons + grayscale
+      let btns = taskDiv.querySelector(".buttons");
+      if (btns) btns.style.display = "none";
+      let img = document.querySelector(`.bb${task[task.length - 1]}b`);
+      if (img) img.style.filter = "grayscale(0%)";
     });
   }
 }
+
 
 
 function saveProgress() {
