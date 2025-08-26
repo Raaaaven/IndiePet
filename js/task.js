@@ -98,7 +98,7 @@ function completeTask1() {
   document.querySelector('.failed').style.display = 'none';
   document.querySelector('.placeholder').style.display = 'none';
   document.querySelector('.bb1b').style.filter = 'grayscale(0%)';
-  user.completed.push("task1"); 
+  user.completed.push("task1D"); 
   saveProgress();    
 }
 
@@ -118,7 +118,7 @@ function completeTask2() {
   document.querySelector('.task2D .buttons').style.display = 'none';
   document.querySelector('.placeholder').style.display = 'none';
   document.querySelector('.bb2b').style.filter = 'grayscale(0%)';
-  user.completed.push("task2"); 
+  user.completed.push("task2D"); 
   saveProgress();    
 }
 
@@ -138,7 +138,7 @@ function completeTask3() {
   document.querySelector('.task3D .buttons').style.display = 'none';
   document.querySelector('.placeholder').style.display = 'none';
   document.querySelector('.bb3b').style.filter = 'grayscale(0%)';
-  user.completed.push("task3"); 
+  user.completed.push("task3D"); 
   saveProgress();    
 }
 
@@ -158,7 +158,7 @@ function completeTask4() {
   document.querySelector('.task4D .buttons').style.display = 'none';
   document.querySelector('.placeholder').style.display = 'none';
   document.querySelector('.bb4b').style.filter = 'grayscale(0%)';
-  user.completed.push("task4"); 
+  user.completed.push("task4D"); 
   saveProgress();    
 }
 function completeTask5() {
@@ -177,7 +177,7 @@ function completeTask5() {
   document.querySelector('.task5D .buttons').style.display = 'none';
   document.querySelector('.placeholder').style.display = 'none';
   document.querySelector('.bb5b').style.filter = 'grayscale(0%)';
-  user.completed.push("task5"); 
+  user.completed.push("task5D"); 
   saveProgress();    
 }
 function failedTask() {
