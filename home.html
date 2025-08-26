@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IndiePet</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barrio&family=Fascinate&family=Lakki+Reddy&family=Mansalva&display=swap" rel="stylesheet">
+  </head>
+<body>
+  <div id="navbar"></div>
+  <main class="hmain">
+    <div id="top">
+      <button onclick="backBtn()" class="back"> < Back </button>
+      <div class="top-right">
+        <div onclick="window.location.href='badges.html'" class="bb badges">
+          <img src="assets/badgesI.png" alt="Badges" width="40" height="40">
+          <div class="badge-count">0</div>
+        </div>
+        <div class="bb coins">
+          <img src="assets/coin.png" alt="Coins" width="40" height="40">
+          <div class="coin-count">0</div>
+        </div>
+        <div onclick="window.location.href='shop.html'" class="bb cart">
+          <img src="assets/cart.png" alt="Cart" width="40" height="40">
+        </div>
+      </div>
+    </div>
+    <div id="left">
+      <div class="tasks">
+        <div onclick="showTask1D()" class="task task1" data-coins="5" data-badges="1"><img src="assets/t1bg.jpeg" alt="img"></div>
+        <div onclick="showTask2D()" class="task task2" data-coins="5" data-badges="1"><img src="assets/t2bg.jpeg" alt="img">"</div>
+        <div onclick="showTask3D()" class="task task3" data-coins="5" data-badges="1"><img src="assets/t3bg.jpeg" alt="img">"</div>
+        <div onclick="showTask4D()" class="task task4" data-coins="5" data-badges="1"><img src="assets/t4bg.jpeg" alt="img">"</div>
+        <div onclick="showTask5D()" class="task task5" data-coins="5" data-badges="1"><img src="assets/t5bg.jpeg" alt="img">"</div>
+      </div>
+      <div class="task1D hidden"> 
+        <h1>Your first Task</h1>
+        <p>Go talk to a classmate you don’t usually hang out with. Start a convo, maybe about homework, a funny meme, or anything random. The goal? Make a new friend. When you’ve actually done it, hit Complete, we’re trusting you here.</p>
+        <div class="buttons">
+          <button onclick="completeTask1()" class="complete">Completedd</button>
+          <button onclick="failedTask()" class="failed">failed</button>
+        </div>
+      </div>
+      <div class="task2D hidden"> 
+        <h1>Your Second Task</h1>
+        <p>Join a new online voice chat group. Don’t just sit muted, talk for at least 10–20 minutes, even if people ignore you at first. Keep going, because the win here is proving you can hold your ground. Hit Complete only when you’ve survived the full time.</p>
+        <div class="buttons">
+          <button onclick="completeTask2()" class="complete">Completedd</button>
+          <button onclick="failedTask()" class="failed">failed</button>
+        </div>
+      </div>
+      <div class="task3D hidden"> 
+        <h1>Your third Task</h1>
+        <p>While you’re out walking, give a genuine compliment to a random stranger. Could be about their outfit, their shoes, or even their vibe. The goal is to spark a quick positive interaction—easy, short, done. Complete it once you’ve made someone smile.</p>
+        <div class="buttons">
+          <button onclick="completeTask3()" class="complete">Completedd</button>
+          <button onclick="failedTask()" class="failed">failed</button>
+        </div>
+      </div>
+      <div class="task4D hidden"> 
+        <h1>Your forth Task</h1>
+        <p>Head to a bookshop and ask a random customer to recommend you a book. Don’t just take the title and leave, actually have a short convo about it. Ask why they liked it, what type of reader it’s for. When you’ve had a real back-and-forth, mark Complete.</p>
+        <div class="buttons">
+          <button onclick="completeTask4()" class="complete">Completedd</button>
+          <button onclick="failedTask()" class="failed">failed</button>
+        </div>
+      </div>
+      <div class="task5D hidden"> 
+        <h1>Your fifth Task</h1>
+        <p>Go to a café or shop alone and order something. But here’s the thing: when your order arrives, say “Oh, I forgot to mention, no onions please” (or politely tell them if they got it wrong). Don’t just accept it and walk away, wait until they fix it and only leave once you’ve got the correct order in your hands. Hit Complete when you’ve stood your ground.</p>
+        <div class="buttons">
+          <button onclick="completeTask5()" class="complete">Completedd</button>
+          <button onclick="failedTask()" class="failed">failed</button>
+        </div>
+      </div>
+    </div>
+    <div id="right">
+      <div onclick="window.location.href='pet.html'" class="pet"> 
+        <img class="pp" src="assets/c.png" alt="pet">
+      </div>
+      <div onclick="window.location.href='badges.html'" class="badgesD">
+        <p class="placeholder">Complete tasks to earn badges 🏅</p>
+
+      </div>
+    </div>
+  </main>
+  <script src="js/nav.js"></script>
+  <script src="js/task.js"></script>
+
+</body>
+</html>

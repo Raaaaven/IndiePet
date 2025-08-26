@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IndiePet</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barrio&family=Fascinate&family=Lakki+Reddy&family=Mansalva&display=swap" rel="stylesheet">
+  </head>
+<body>
+  <div id="navbar"></div>
+  <main class="smain">
+    <h1>Shop</h1>
+    <div class="oo">
+      <div class="coins">
+        <img src="assets/coin.png" alt="Coins" width="40" height="40">
+        <div class="coin-count">0</div>
+      </div>
+    </div>
+    <div class="nn">
+      <div class="top">
+        <button onclick="shopeeBtn()" class="shopeebtn">🛒</button>
+        <button onclick="boughtBtn()" class="boughtbtn">✔️</button>
+      </div>
+      <div class="shopee">
+        <div onclick="buyShI()" class="item shI">
+          <p>Shark Costume</p>
+          <img src="assets/cowB.png">
+          <p>10 Coins</p>
+        </div>
+        <div onclick="buyIcI()" class="item IcI">
+          <p>CowBoy Costume</p>
+          <img src="assets/shark.png">
+          <p>15 Coins</p>
+        </div>
+      </div>
+      <div class="bought">
+        <p class="placeholderr">No Items</p>
+        <div style="display:none;"onclick="buyShIT()" class="item shIT">
+          <p>Shark Costume</p>
+          <img src="assets/cowB.png">
+        </div>
+        <div style="display:none;"onclick="buyIcIT()" class="item IcIT">
+          <p>CowBoy Costume</p>
+          <img src="assets/shark.png">
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="js/nav.js"></script>
+  <script src="js/task.js"></script>
+</body>
+</html>
